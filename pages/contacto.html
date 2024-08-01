@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!--Insertar css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>MQN🍔</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo">
+                <img class="img__nav" src="../img/MQN-removebg-preview (1).png" alt="logo-mqn">
+            </div>
+            <ul class="header__menu">
+                <li class="header__item">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="header__item">
+                    <a href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="header__item">
+                    <a href="../pages/sucursales.html">Sucursales</a>
+                </li>
+                <li class="header__item">
+                    <a href="../pages/menu.html">Menu</a>
+                </li>
+                <li class="header__item">
+                    <a href="../pages/productos.html">Productos</a>
+                </li>
+                <li class="header__item">
+                    <a href="../pages/contacto.html">Contacto</a>
+                </li>
+                <li class="header__titulo">
+                    <h1>MQN🍔</h1>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contacto__formulario">
+            <p>Estamos en busca de gente que quiera ocupar puestos de trabajo en nuestros locales. Si estas interesado, por favor llena este formulario para que podamos ponernos en contacto</p>
+        </div>
+        <div class="formulario">
+            <h2>Formulario de Contacto</h2>
+            <form action="submit.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9,12}" required>
+                    <small>Formato: 9 a 12 dígitos numéricos</small>
+                <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h4>mail 💌 info@mqnburger.com</h4>
+        <h4>teléfono ☎ 948584937</h4>
+    </footer>
+</body>
+</html>
